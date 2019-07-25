@@ -1,0 +1,52 @@
+
+<section class="wthree-row w3-gallery py-sm-5 py-3" id="gallery">
+	<div class="container py-lg-5 py-3">
+		<h2 class="heading text-center mb-lg-5 mb-4">Forms To fill By Admin </h2>
+<div class="col-lg-4 offset-lg-3">
+        <form id="form">
+            <div class="form-group">
+                <label for="inputAddress">Location_Name</label>
+                <input type="text" class="form-control" [(ngModel)]="name" name="name">
+            </div>
+            <!-- <div class="form-row"> -->
+                <!-- <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" [(ngModel)]="email" placeholder="Email" name="email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">password</label>
+                    <input type="password" class="form-control" id="inputPassword4" [(ngModel)]="password" placeholder="Password" name="password">
+                </div> 
+                </div>-->
+            <!-- </div> -->
+            <div class="form-group">
+                <label for="inputAddress">Location_Address</label>
+                <input type="text" class="form-control" id="inputAddress" [(ngModel)]="address" name="address">
+            </div>
+            <div class="form-row" style="float: left">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity" [(ngModel)]="city" name="city" >
+                </div>
+                <div class="form-group">
+                        <label for="inputPrice"> <span class="fa fa-empire"></span>Total Cost Estimated <span><span class="line"></span>On This Location</span></label>
+                        <input type="text" class="form-control"  [(ngModel)]="Cost" name="Cost">
+                    </div>
+            <div class="form-row" style="float:left">
+              <div class="form-group col-md-6">
+                  <label for="inputImage">image link</label>
+                  <input type="text" class="form-control" [(ngModel)]="image" name="image" >
+              </div>
+          </div >
+          </div>
+            <button type="submit" class="btn btn-primary" (click)="addData()">submit</button>
+        </form>
+      </div>
+      </div>
+     
+      </section>
+       <!-- <script>
+          function f1(){
+              document.getElementById("form").reset();
+          }
+      </script> -->

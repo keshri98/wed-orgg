@@ -1,0 +1,58 @@
+<section class="wthree-row w3-gallery py-sm-5 py-3" id="gallery">
+	<div class="container py-lg-5 py-3">
+    <h3 class="heading text-center mb-lg-5 mb-4">Our Locations and Approximately Estimated Cost </h3>
+    
+<div class="row">
+        <div class="col-3" *ngFor="let obj of arr">
+            <div class="card" style="width: 18rem;"  >
+                    <img class="card-img-top"
+                     src="{{obj.image}}" alt="Card image cap">
+                    <div class="card-body">
+                      <h4>Location Name:</h4>
+                        <h5 class="card-title">{{obj.name}}</h5>
+                        <h4>Location City:</h4>
+                        <p class="card-text">{{obj.city}}</p>
+                        <h4>Location Cost Estimed:</h4>
+                        <p class="card-text">{{obj.Cost}}</p>
+                        <h4>Location Address:</h4>
+                        <p class="text-nowrap" style="width: 8rem;">
+                            {{obj.address}}</p>
+    
+                            <button type="submit"
+                            [routerLink]="['/update',obj._id]">Update</button>
+                            <button type="submit"
+                            (click)="delData(obj._id)">Delete</button>
+                    </div>
+                </div>
+          
+          
+          
+          
+          
+          
+          
+          
+<!--           
+                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="{{obj._id}}" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+            </div>
+        </div>
+        </div>
+</section>

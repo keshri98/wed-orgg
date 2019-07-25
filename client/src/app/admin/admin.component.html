@@ -1,0 +1,49 @@
+<section class="wthree-row w3-gallery py-sm-5 py-3" id="gallery">
+	<div class="container py-lg-5 py-3">
+		<h2 class="heading text-center mb-lg-5 mb-4">Add The considered address in locations  </h2>
+<div class="row">
+    <div class="col-3" *ngFor="let obj of arr">
+        <div class="card" style="width: 18rem;"  >
+                
+                <div class="card-body">
+                    <h5 class="card-title">{{obj.lname}}</h5>
+                    <p class="card-text">{{obj.acity}}</p>
+                    <a href="#" class="btn btn-primary">
+                        {{obj.taddress}}</a>
+
+         <button type="submit" 
+         [routerLink]="['/update',obj._id]">Submit</button>
+                </div>
+            </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="{{obj._id}}" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+        </div>
+    </div>
+    </div>
+    </section>
